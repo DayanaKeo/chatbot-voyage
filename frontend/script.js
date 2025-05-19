@@ -33,7 +33,7 @@ async function sendMessage() {
 
   try {
     // 4) Envoie tout l'historique à ton backend
-    const res = await fetch('http://localhost:3000/api/chat', {
+    const res = await fetch('https://travelbot-backend.onrender.com/api/chat', { // Remplace par l'URL de ton backend, ici url de Render, là où l'api backend est déployer
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ messages: chatHistory })
