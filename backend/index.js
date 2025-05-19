@@ -7,6 +7,9 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+const PORT = process.env.PORT || 3000;
+
+
 process.on('unhandledRejection', (reason, promise) => {
     console.error('Unhandled Rejection:', reason);
   });
@@ -35,6 +38,5 @@ app.post('/api/chat', async (req, res) => {
 });
 
 
-app.listen(3000, () => {
-  console.log('Serveur en écoute sur http://localhost:3000');
-});
+app.listen(PORT, () => console.log(`Server en écoute sur le port ${PORT}`));
+
