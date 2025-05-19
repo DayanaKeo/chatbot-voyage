@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: travelbot-backend
+    env: node
+    plan: free
+    buildCommand: cd backend && npm install
+    startCommand: node backend/index.js
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
