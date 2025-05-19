@@ -4,7 +4,13 @@ const cors = require('cors');
 const { OpenAI } = require('openai');
 
 const app = express();
-app.use(cors());
+
+app.use(cors({
+  origin: '*', // Autorise toutes les origines (ou remplace par ton domaine frontend spécifique)
+  methods: ['GET', 'POST', 'OPTIONS'],
+  allowedHeaders: ['Content-Type']
+}));
+
 app.use(express.json());
 
 const PORT = process.env.PORT || 3000;
