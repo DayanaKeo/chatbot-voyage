@@ -34,7 +34,7 @@ Git & GitHub pour le versionnement
 
 #### Cloner le dépôt
 
-git clone https://github.com/ton-utilisateur/chatbot-voyage.git
+git clone https://github.com/DayanaKeo/chatbot-voyage.git
 cd chatbot-voyage
 
 #### Configurer le backend
