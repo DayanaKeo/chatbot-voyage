@@ -15,11 +15,12 @@ html, body {
 .chat-container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  max-width: 100%;
-  margin: auto;
-  padding: 10px;
+  height: 80%;
+  max-width: 80%;
+  margin: 5rem auto;
+  padding: 2rem;
   background-color: white;
+  gap: 1rem;
 }
 
 /* Titre */
@@ -56,6 +57,7 @@ h1 {
   align-self: flex-end;
   text-align: right;
   margin-left: auto;
+  font-size: 2rem;
 }
 
 .bot {
@@ -105,10 +107,23 @@ button:hover {
   }
 
   button {
-    font-size: 16px;
+    font-size: 50px;
   }
 
-  .bubble {
-    font-size: 15px;
-  }
+/* .bubble.user {
+  font-size: 2rem;
+  background-color: #dff9fb;
+  text-align: right;
+} */
+
+.user {
+  font-size: 16px !important;
+  color: #333;
+}
+
+.bubble.bot {
+  font-size: 1.5rem;
+  background-color: #f6e58d;
+  text-align: left;
+}
 }
